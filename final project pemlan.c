@@ -139,5 +139,26 @@ int pencarian1(struct data a[50],int n,int i,int resi){
 	
 }
 
+int pencarian4(struct data a[50],int n,int i,int harga){
+	int flag=-1;
+	
+	if(a[i].totharga==harga){
+		printf("\n+-----------------------------------------------------------------------------------------------------------------------------------------+");
+		printf("\n|No.Resi| Nama Penerima | Alamat Penerima | Nama Pengirim | Alamat Pengirim | Berat Barang | Jenis Pengiriman | Total Harga |");
+		printf("\n+-----------------------------------------------------------------------------------------------------------------------------------------+");
+		printf("\n|   %i   |   %s  |	%s no %i kota %s,%s |	%s |	%s no %i kota %s,%s |	%i kg |	%s |	%i |",a[i].resi,a[i].namapenerima,a[i].addr.jalan,a[i].addr.norumah,a[i].addr.kota,a[i].addr.provinsi,a[i].namapengirim,a[i].addr1.jalan,a[i].addr1.norumah,a[i].addr1.kota,a[i].addr1.provinsi,a[i].berat,a[i].jenis,a[i].totharga);
+		flag++;
+		
+	}else{
+		if (i<n){
+			return pencarian4(a,n,(i+1),harga);
+		}
+	}
+	
+	if(flag==-1){
+		printf("tidak ada");
+	}
+}
+
 
 
