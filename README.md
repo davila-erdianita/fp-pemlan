@@ -27,6 +27,6 @@
 	</tr>
 	<tr>
 		<td>Davila Erdianita</td>
-		<td>18081010120/td>
+		<td>18081010120</td>
         </tr>
     </table>
